@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.out-circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.in-circle{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.watch{
+    justify-content: center;
+    align-items: center;  
+}
+
+.text{
+    align-items: center;
+    color: white;
+}
+ .minute{
+    font-size: 45px;
+}
+.second{
+    font-size: 39px;
+}
+.msec{
+    font-size: 35px;
+}
+.but-con{
+    display: flex;
+    width: 250px;
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+.but{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    /* text-align: center; */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.but:hover{
+    background-color: white;
+    color: black;
+}
+.lap{
+    list-style: none;
+    color: white;
+    height: 250px;
+    width: 250px;
+    overflow: auto;
+    position: relative;
+    margin-top:30px 0;
+
+
+  
+}
+.animation-bg{
+    background:linear-gradient(-45deg,#ee7752,orange,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-color: 0% 50%;
+    }
+    50%{
+        background-color: 100% 50%;
+    }
+    100%{
+        background-color: 0% 50%;
+    }
+}
+.lap::-webkit-scrollbar {
+    display: none ;
+}
+.lap-item{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #444;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.num{
+    color: #ccccccc;
+}
+.time-stamp{
+    display: inline-block;
+    margin-left: 25px;
+}
+.clear{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30x;
+    left: 50%;
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: grey;
+    border: 2px solid white;
+    color: black;
+    font-size: 20px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;
+}
+
